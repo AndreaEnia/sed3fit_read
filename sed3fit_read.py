@@ -3,13 +3,11 @@ import re
 import astropy.units as u
 
 class Sed3FitOutput(object):
-    """
-    potato potato potato
-    """
     
     def __init__(self, fitfilename, sedfilename):
         """
-        potato potato potato
+        Input: path to .fit and .sed files
+        Output: object with the whole S3F outputs
         """
         fitfile = open(fitfilename)
         sedfile = open(sedfilename)
@@ -19,10 +17,8 @@ class Sed3FitOutput(object):
         sedfile.close()
         
         #strip out newline characters
-        for i in range(len(fitinfo)):
-            fitinfo[i] = fitinfo[i].strip()
-        for i in range(len(sedinfo)):
-            sedinfo[i] = sedinfo[i].strip()
+        for i in range(len(fitinfo)): fitinfo[i] = fitinfo[i].strip()
+        for i in range(len(sedinfo)): sedinfo[i] = sedinfo[i].strip()
         
         #first go through fitinfo
         filternames = fitinfo[1].strip("#")
