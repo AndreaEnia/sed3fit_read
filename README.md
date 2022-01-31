@@ -1,5 +1,5 @@
 # sed3fit_read
-A package mutuated from the magphys_read_output repository, to read output from sed3fit (available here http://steatreb.altervista.org/alterpages/sed3fit.html).
+A package mutuated from the magphys_read_output repository, to read outputs from sed3fit (available here http://steatreb.altervista.org/alterpages/sed3fit.html).
 
 Usage:
 
