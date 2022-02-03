@@ -8,4 +8,4 @@ import sed3fit_read
 results = sed3fit_read.Sed3FitOutput(path_to_fit, path_to_sed)        
 ```
 
-Then all the sed3fit outputs will be stored in the results object.
+Then all the sed3fit outputs will be stored in the results object, including input data, best-fit SEDs and model parameters.
